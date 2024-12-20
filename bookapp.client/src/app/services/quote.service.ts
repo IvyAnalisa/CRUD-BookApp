@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
   providedIn: 'root',
 })
 export class QuoteService {
-  private apiUrl = 'https://localhost:7149/api/Quotes'; // Replace with your API endpoint
+  private apiUrl = 'environment.apiUrl/Quotes'; // Replace with your API endpoint
 
   constructor(private http: HttpClient, private authService: AuthService ) {}
 

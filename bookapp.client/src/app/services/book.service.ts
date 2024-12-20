@@ -3,12 +3,12 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Book } from '../models/book';  
 import { AuthService } from './auth.service';
-
+import { environment } from '../../enviroments/enviroment';
 @Injectable({
   providedIn: 'root',  // This registers the service globally
 })
 export class BookService {
-  private apiUrl = 'https://localhost:7149/api/Books';  // Replace with your API URL
+  private apiUrl = 'environment.apiUrl/Books';  // Replace with your API URL
 
   constructor(private http: HttpClient,private authService: AuthService) {}
 
