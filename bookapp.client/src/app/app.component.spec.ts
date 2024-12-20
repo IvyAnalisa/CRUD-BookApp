@@ -39,7 +39,7 @@ describe('AppComponent', () => {
     component.ngOnInit();
 
     // Expect the HTTP request to match the '/api/Books' endpoint
-    const req = httpMock.expectOne('https://localhost:7149/api/Books'); // Correct API endpoint
+    const req = httpMock.expectOne('environment.apiUrl/Books'); // Correct API endpoint
     expect(req.request.method).toEqual('GET'); // Ensure the request method is GET
     req.flush(mockBooks); // Mock the response with book data
 
