@@ -8,7 +8,7 @@ import { environment } from '../../enviroments/enviroment';
   providedIn: 'root',  // This registers the service globally
 })
 export class BookService {
-  private apiUrl = 'environment.apiUrl/Books';  // Replace with your API URL
+  private apiUrl = environment.apiUrl + '/Books' ; 
 
   constructor(private http: HttpClient,private authService: AuthService) {}
 

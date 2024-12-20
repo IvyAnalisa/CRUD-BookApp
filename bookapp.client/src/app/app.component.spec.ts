@@ -1,6 +1,7 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { environment } from '../enviroments/enviroment';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -39,7 +40,7 @@ describe('AppComponent', () => {
     component.ngOnInit();
 
     // Expect the HTTP request to match the '/api/Books' endpoint
-    const req = httpMock.expectOne('environment.apiUrl/Books'); // Correct API endpoint
+    const req = httpMock.expectOne( environment.apiUrl + '/Books' ); // Correct API endpoint
     expect(req.request.method).toEqual('GET'); // Ensure the request method is GET
     req.flush(mockBooks); // Mock the response with book data
 

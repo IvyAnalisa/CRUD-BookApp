@@ -3,12 +3,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Quote } from '../models/quote';
 import { AuthService } from './auth.service';
+import { environment } from '../../enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class QuoteService {
-  private apiUrl = 'environment.apiUrl'; // Replace with your API endpoint
+  private apiUrl = environment.apiUrl + '/Quotes' ; 
 
   constructor(private http: HttpClient, private authService: AuthService ) {}
 
