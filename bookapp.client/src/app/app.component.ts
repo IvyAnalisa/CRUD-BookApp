@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 // Function to fetch books from the backend API
 getBooks() {
   const headers = this.authService.getAuthHeaders(); // Get the headers with the token
-  this.http.get<Book[]>('https://localhost:7149/api/Books', { headers }).subscribe(  // Send token with the request
+  this.http.get<Book[]>('environment.apiUrl/Books', { headers }).subscribe(  // Send token with the request
     (result) => {
       this.books = result; // Store the fetched books in the 'books' array
     },
