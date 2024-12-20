@@ -1,0 +1,16 @@
+﻿/* Custom styling for screens less than 768px */
+@media (max-width: 767px) {
+    .custom-class {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Custom styling for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .custom-class {
+      font-size: 20px;
+      padding: 20px;
+    }
+  }
+  

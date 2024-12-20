@@ -1,0 +1,60 @@
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card rounded-3">
+          <div class="card-body p-4">
+<div class="text-center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzBWD2agX62OdSs_MFL4hxCV9LoHdtAAQEJO0GH796viedSmh2wSIxkLRHu5fOZKGlNOM&usqp=CAU"
+    style="width: 185px;" alt="logo">
+  <h4 class="mt-1 mb-5 pb-1">Book List</h4>
+</div>
+
+<div class="container mt-3">
+
+  
+  <!-- Add New Book Button -->
+  <a [routerLink]="['/add-book']" class="btn btn-primary mb-3">Add New Book</a>
+
+  <!-- Book List Table -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Published Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books, let i=index">
+        <td>{{i+1}}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publishDate | date:'shortDate' }}</td>
+        <td>
+          <!-- Edit Button -->
+         <a [routerLink]="['/edit-book', book.id]" class="btn btn-warning btn-sm">
+            <i class="fa fa-pencil-alt"></i> Edit
+          </a> 
+          
+          <!-- Delete Button-->
+         
+          <button (click)="onDelete(book.id)" class="btn btn-danger btn-sm">
+            <i class="fa fa-trash"></i> Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+

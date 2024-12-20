@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BookApp.Server\\BookApp.Server.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

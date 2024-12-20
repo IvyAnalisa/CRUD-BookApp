@@ -1,0 +1,59 @@
+<div class="container">
+    <h2>Add a New Quote</h2>
+    <form (ngSubmit)="submitQuote()">
+      <div class="form-group">
+        <label for="quoteText">Quote Text</label>
+        <textarea id="quoteText" [(ngModel)]="quote.text" name="text" class="form-control" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input
+          id="author"
+          type="text"
+          [(ngModel)]="quote.author"
+          name="author"
+          class="form-control"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-9 col-xl-7">
+          <div class="card rounded-3">
+            <div class="card-body p-4">
+            
+                <div class="text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzBWD2agX62OdSs_MFL4hxCV9LoHdtAAQEJO0GH796viedSmh2wSIxkLRHu5fOZKGlNOM&usqp=CAU"
+                    style="width: 185px;" alt="logo">
+                  <h2 class="mt-1 mb-5 pb-1">Add new quote</h2>
+                </div>
+
+                <form (ngSubmit)="submitQuote()">
+                  <div class="form-group">
+                    <label for="quoteText">Quote Text</label>
+                    <textarea id="quoteText" [(ngModel)]="quote.text" name="text" class="form-control" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Author</label>
+                    <input
+                      id="author"
+                      type="text"
+                      [(ngModel)]="quote.author"
+                      name="author"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>

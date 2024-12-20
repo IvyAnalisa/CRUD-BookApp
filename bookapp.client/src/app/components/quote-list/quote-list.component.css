@@ -1,0 +1,40 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    body {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center;     /* Center content vertically */
+      height: 100vh;           /* Full height of the viewport */
+      margin: 0;               /* Remove default body margin */
+    }
+  
+    .button-container {
+      display: flex;           /* Use Flexbox for the button container */
+      gap: 10px;               /* Space between the buttons */
+      text-align: center;      /* Center the text inside the buttons */
+    }
+  
+    .btn {
+      padding: 10px 20px;      /* Add some padding for the buttons */
+    }
+  
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }

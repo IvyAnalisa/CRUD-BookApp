@@ -1,0 +1,41 @@
+  <section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-9 col-xl-7">
+          <div class="card rounded-3">
+            <div class="card-body p-4">
+            
+                <div class="text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzBWD2agX62OdSs_MFL4hxCV9LoHdtAAQEJO0GH796viedSmh2wSIxkLRHu5fOZKGlNOM&usqp=CAU"
+                    style="width: 185px;" alt="logo">
+                  <h2 class="mt-1 mb-5 pb-1">Add new book</h2>
+                </div>
+
+                  <div class="book-form">
+                  <form (ngSubmit)="onSubmit()">
+                    <div>
+                      <label for="title">Title:</label>
+                      <input type="text" id="title" [(ngModel)]="book.title" name="title" required>
+                    </div>
+                
+                    <div>
+                      <label for="author">Author:</label>
+                      <input type="text" id="author" [(ngModel)]="book.author" name="author" required>
+                    </div>
+                
+                    <div>
+                      <label for="publishDate">Publish Date:</label>
+                      <input type="date" id="publishDate" [(ngModel)]="book.publishDate" name="publishDate" required>
+                    </div>
+                
+                    <button type="submit">Add Book</button>
+                  </form>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>
+         
+        
