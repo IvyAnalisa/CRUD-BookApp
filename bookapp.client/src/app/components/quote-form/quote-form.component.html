@@ -1,24 +1,3 @@
-<div class="container">
-    <h2>Add a New Quote</h2>
-    <form (ngSubmit)="submitQuote()">
-      <div class="form-group">
-        <label for="quoteText">Quote Text</label>
-        <textarea id="quoteText" [(ngModel)]="quote.text" name="text" class="form-control" required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="author">Author</label>
-        <input
-          id="author"
-          type="text"
-          [(ngModel)]="quote.author"
-          name="author"
-          class="form-control"
-          required
-        />
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
 
   <section class="vh-100" style="background-color: #eee;">
     <div class="container py-5 h-100">
