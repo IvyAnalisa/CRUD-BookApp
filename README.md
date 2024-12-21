@@ -47,4 +47,77 @@
 **Additional Challenge:**
 
 - Implement a button that allows the user to toggle between a light and dark UX design for the application.
+** Features
+- Book Management: CRUD functionality to add, view, update, and delete books.
+- Authentication: Secure login functionality (JWT-based authentication).
+- Database: Uses Microsoft SQL Server, hosted on Azure, for persistent data storage.
+- API: Exposes a RESTful API for interacting with book data.
+**Technologies Used:
+ - Frontend: HTML, CSS, JavaScript  Angular 18.
+ - Backend: ASP.NET Core (Web API).
+ - Database: Microsoft SQL Server (hosted on Azure).
+ - Authentication: JWT (JSON Web Token) for user authentication.
+ - Deployment: Microsoft Azure (App Service, SQL Database, and App Services for deployment).
+
+  ## Running Locally
+
+### Prerequisites
+
+- **.NET Core SDK** (8.0 or higher)
+- **Azure Account** (optional for deployment)
+- **GitHub Account**
+
+### Steps to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/IvyAnalisa/CRUD-BookApp.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd CRUD-BookApp
+   ```
+3. Restore dependencies:
+   ```bash
+   dotnet restore
+   ```
+4. Build the project:
+   ```bash
+   dotnet build
+   ```
+5. Run the application:
+   ```bash
+   dotnet run
+   ```
+
+The API will be available locally at `https://localhost:7149` for Backen Server, `https://localhost:60529` for Client.
+
+## Deployment
+### 1. **Preparing the Azure Environment**
+
+- **Azure App Service**: Created using Azure Portal.
+- **Region & Pricing Plan**: Selected a student-supported plan.
+- **SCM Configuration**: Enabled in App Service to allow deployment from GitHub.
+
+### 2. **CI/CD Setup**
+
+- Configured **GitHub Actions** for Continuous Integration/Continuous Deployment (CI/CD).
+- Steps include building the project with `.NET Core`, publishing artifacts, and deploying to **Azure Web App** using the `azure/webapps-deploy` GitHub action.
+
+### 3. **Application Insights**
+
+- **Application Insights** has been enabled for monitoring application performance.
+- Allows real-time tracking of response times, requests, and errors.
+- Traffic simulation was done to test performance.
+
+### 4. **Deployment Instructions**
+
+1. **Build Process**: The project is automatically built and deployed on every push to the `master` branch via GitHub Actions.
+2. **Deployment Slot**: The app is deployed to the production slot of Azure App Service.
+3. **Live URL**: The web API is available at `https://book-web-api-bbemd6c3hghyg4a7.northeurope-01.azurewebsites.net`.
+
+### 5. **Monitoring**
+
+- Application Insights captures logs and performance metrics.
+- Real-time metrics like CPU usage, memory, and request rates can be monitored.
 
