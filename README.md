@@ -47,13 +47,14 @@
 **Additional Challenge:**
 
 - Implement a button that allows the user to toggle between a light and dark UX design for the application.
-**Features**
+- 
+**Features:**
 - Book Management: CRUD functionality to add, view, update, and delete books.
 - Authentication: Secure login functionality (JWT-based authentication).
 - Database: Uses Microsoft SQL Server, hosted on Azure, for persistent data storage.
 - API: Exposes a RESTful API for interacting with book data.
   
-**Technologies Used**
+**Technologies Used:**
  - Frontend: HTML, CSS, JavaScript  Angular 18.
  - Backend: ASP.NET Core (Web API).
  - Database: Microsoft SQL Server (hosted on Azure).
