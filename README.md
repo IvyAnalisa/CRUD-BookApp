@@ -47,12 +47,13 @@
 **Additional Challenge:**
 
 - Implement a button that allows the user to toggle between a light and dark UX design for the application.
-** Features
+**Features**
 - Book Management: CRUD functionality to add, view, update, and delete books.
 - Authentication: Secure login functionality (JWT-based authentication).
 - Database: Uses Microsoft SQL Server, hosted on Azure, for persistent data storage.
 - API: Exposes a RESTful API for interacting with book data.
-**Technologies Used:
+  
+**Technologies Used**
  - Frontend: HTML, CSS, JavaScript  Angular 18.
  - Backend: ASP.NET Core (Web API).
  - Database: Microsoft SQL Server (hosted on Azure).
@@ -114,7 +115,7 @@ The API will be available locally at `https://localhost:7149` for Backen Server,
 
 1. **Build Process**: The project is automatically built and deployed on every push to the `master` branch via GitHub Actions.
 2. **Deployment Slot**: The app is deployed to the production slot of Azure App Service.
-3. **Live URL**: The web API is available at `https://book-web-api-bbemd6c3hghyg4a7.northeurope-01.azurewebsites.net`.
+3. **Live URL**: The web API is available at `https://book-web-api-bbemd6c3hghyg4a7.northeurope-01.azurewebsites.net`.Login credentials: user: admin, password:password
 
 ### 5. **Monitoring**
 
